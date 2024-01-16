@@ -1,0 +1,21 @@
+{
+    "name": "acarlosos/session-checker",
+    "description": "Simple packages to check if the user is already logged in",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "acarlosos\\SessionChecker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antonio Carlos",
+            "email": "antonio.oliveira@jumps.com.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "illuminate/support": "^10.40"
+    }
+}
