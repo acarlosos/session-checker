@@ -22,12 +22,12 @@ class SessionChecker{
 
         if( $session  ) {
             $sessionId = $session->id;
-            DB::table('sessions')->where('user_id', $sessionId )->delete();
+            DB::table('sessions')->where('id', $sessionId )->delete();
             Session::getHandler()->destroy($sessionId);
             session()->flash('status', 'Session hás');
         }
 
-        Auth::loginUsinId($userId);
+        Auth::loginUsingId($userId);
 
         return redirect()->intended('/');
     }
