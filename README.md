@@ -6,16 +6,16 @@ Este pacote verificará se um usuário está logado em outro navegador e vai des
 
 - Adicione o pacote com o comando abaixo:
 
-    ```
-    $ composer require acarlosos/session-checker
-    ```
+```
+$ composer require acarlosos/session-checker
+```
 
 - Depois vamos gerar a migration com o comando artisan
 
-    ```
-    $ php artisan session:table
-    $ php artisan migrate
-    ```
+```
+$ php artisan session:table
+$ php artisan migrate
+```
 
 - No arquivo de configuração .env alterar o valor da variável SESSION_DRIVER de file para database
 
