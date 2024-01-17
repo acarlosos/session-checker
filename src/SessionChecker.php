@@ -24,7 +24,7 @@ class SessionChecker{
             $sessionId = $session->id;
             DB::table('sessions')->where('id', $sessionId )->delete();
             Session::getHandler()->destroy($sessionId);
-            session()->flash('status', 'Session hás');
+            session()->flash('status', 'You are already logged in on another browser');
         }
 
         Auth::loginUsingId($userId);
